@@ -1,0 +1,21 @@
+
+Filtre :
+
+DONE - Detecter le User LCID
+DONE - Option Audio_def = -1 => User LCID
+- Faire un daemon de switch (tray icon), peut-être créer une fenêtre dans le filtre pour communiquer par message (si pb de threads).
+- plug-in WMP7 pour remplacer IAMStreamSelect.
+- support des 'strn' (stream name) dans AVI Header
+DONE - support des INFO subChuncks 'IAS1', 'IAS2', 'IASn', ..., 'ICAS' (Current Audio Stream)
+DONE - détecter dans le nom '0xNNNN' => LCID = 0xNNNN.
+
+Edition :
+
+- faire une appli de stream muxing AVI.
+- support des 'strn' (stream name) dans AVI Header
+DONE - support des INFO subChuncks 'IAS1', 'IAS2', 'IASn', ..., 'ICAS' (Current Audio Stream)
+DONE - détecter dans le nom '0xNNNN' => LCID = 0xNNNN.
+- ajouter un stream 'txts' pour sous-titres.
+
+Délire :
+- sous-titre pendant capture par reconnaissance vocale.

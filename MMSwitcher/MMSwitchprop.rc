@@ -1,0 +1,213 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 236, 119
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Switch !",IDC_BUTTON1,161,98,68,14
+    LTEXT           "Copyright © Morgan Multimedia 1990-2002",IDC_STATIC,4,
+                    102,136,8
+    LTEXT           "This plug-in allows you to play multiple-language video clips in Windows Media Player 6 and 9 switching audios stream on the fly.\n\nGo in the 'Audio and Language Tracks' or 'Language' menu of Windows Media Player to select the active audio stream.",
+                    IDC_STATIC,4,41,150,57,NOT WS_GROUP
+    CONTROL         102,IDB_BITMAPMORGAN,"Static",SS_BITMAP,4,2,90,35
+    LISTBOX         IDC_LANGLIST,161,40,67,36,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "\nMorgan Stream Switcher v0.99\n\nhttp://www.morgan-multimedia.com",
+                    IDC_STATIC,97,0,134,38,NOT WS_GROUP
+    PUSHBUTTON      "Edit ...",IDC_EDIT,161,80,68,14
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 236, 83
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION
+CAPTION "Audio and Language Tracks"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,145,62,39,14
+    LTEXT           "Copyright © Morgan Multimedia 1990-2002",IDC_STATIC,4,
+                    66,136,8
+    PUSHBUTTON      "&Cancel",IDCANCEL,189,62,39,14
+    COMBOBOX        IDC_LANGLIST,8,42,220,120,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DEFLANGLIST,8,15,220,120,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Default Audio Language :",IDC_STATIC,4,4,82,8
+    LTEXT           "Audio Language of this Track :",IDC_STATIC,4,31,101,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,9,9,0
+ PRODUCTVERSION 0,9,9,0
+ FILEFLAGSMASK 0x30003fL
+#ifdef _DEBUG
+ FILEFLAGS 0xbL
+#else
+ FILEFLAGS 0xaL
+#endif
+ FILEOS 0x10001L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "ActiveMovie", "Filter dll\0"
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Morgan Multimedia\0"
+            VALUE "FileDescription", "MM Switcher\0"
+            VALUE "FileVersion", "0, 9, 9, 0\0"
+            VALUE "InternalName", "MMSwitch.ax\0"
+            VALUE "LegalCopyright", "Copyright (C) 1990-2001 Morgan Multimedia.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OLESelfRegister", "AM20\0"
+            VALUE "OriginalFilename", "MMSwitch.ax\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Morgan Multimedia Stream Switcher\0"
+            VALUE "ProductVersion", "0, 9, 9, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        VERTGUIDE, 4
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        VERTGUIDE, 4
+        VERTGUIDE, 8
+        VERTGUIDE, 228
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "Morgan.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RAW
+//
+
+IDB_ICONSTREAM0         STREAM  DISCARDABLE     "anim/IconStream0.png"
+IDB_ICONSTREAM1         STREAM  DISCARDABLE     "anim/IconStream1.png"
+IDB_ICONSTREAM2         STREAM  DISCARDABLE     "anim/IconStream2.png"
+IDB_ICONSTREAM3         STREAM  DISCARDABLE     "anim/IconStream3.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PREFORMAT           "Format:  "
+    IDS_PREMAJOR            "Major Type:  "
+    IDS_PRESUB              "Sub Type:  "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NOTYPE              "(none)"
+    IDS_ANYTYPE             "Any Media Type/Sub Type"
+    IDS_TITLE               "MMSwitch"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

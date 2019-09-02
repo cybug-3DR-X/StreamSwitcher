@@ -1,0 +1,182 @@
+Issue# 511996, Bucket 2336356
+_______________________________________________________________________________________________
+
+Developer's thought: Crash is in MMSwitch.ax
+File version:     0.9.4.0
+Product version:  0.9.4.0
+MMSWITCH is trying to call DllGetClassObject and ends up in access violation around that call.
+
+________________________________________________________________________________________________
+
+AppName: iexplore.exe
+AppVersion: 6.0.2600.0
+ModName: mmswitch.ax
+ModVersion: 0.9.4.0
+offset: 00004e86
+Filename: mmswitch.ax
+Version: 0.9.4.0
+szSymbol: MMSWITCH.AX!0x00004e86
+
+Loaded Modules
+start    end        module name
+00400000 00419000   iexplore     (deferred)
+01860000 0186a000   wsock32      (deferred)
+01a00000 01a11000   bhodisp0     (deferred)
+01a60000 01a7a000   navshext     (deferred)
+01ac0000 01ad5000   ws2_32       (deferred)
+01ae0000 01ae8000   ws2help      (deferred)
+01b80000 01b88000   wshtcpip     (deferred)
+01bc0000 01c48000   shdoclc      (deferred)
+01e50000 01e8b000   mswsock      (deferred)
+034b0000 034cb000   scrauth      (deferred)
+035e0000 035fe000   scrblock     (deferred)
+0b950000 0b966000   tfmaudio     (deferred)
+0ffd0000 0fff2000   rsaenh       (deferred)
+10000000 10056000   ifoxdll      (deferred)
+11000000 1101c000   egieprocess     (deferred)
+12000000 120dc000   egieengine     (deferred)
+1a400000 1a479000   urlmon       (deferred)
+1c400000 1c40d000   divxaf       (deferred)
+1d1c0000 1d1d0000   mmswitch     (no symbolic information)
+1f7b0000 1f7e1000   odbc32       (deferred)
+1f850000 1f866000   odbcint      (deferred)
+1ff00000 1ff7d000   dxmasf       (deferred)
+3a700000 3a718000   imekr61      (deferred)
+41b00000 41b41000   drmclien     (deferred)
+57290000 572ca000   msadds32     (deferred)
+57880000 578e5000   swflash      (deferred)
+58e60000 58e92000   wmadmod      (deferred)
+59c00000 59c8d000   wiashext     (deferred)
+5a480000 5a4b4000   uxtheme      (deferred)
+5b3d0000 5b40f000   strmdll      (deferred)
+5d7f0000 5d818000   qasf         (deferred)
+5e700000 5e71a000   olepro32     (deferred)
+601a0000 601dd000   msieftp      (deferred)
+62340000 62348000   lpk          (deferred)
+63000000 63094000   wininet      (deferred)
+63580000 63824000   mshtml       (deferred)
+662d0000 662da000   imgutil      (deferred)
+66330000 66348000   imekrcic     (deferred)
+68000000 6801f000   ycomp4_0_2_5     (deferred)
+698c0000 698d2000   faultrep     (deferred)
+6b600000 6b672000   vbscript     (deferred)
+6c270000 6c2a3000   dxtrans      (deferred)
+6c2b0000 6c305000   dxtmsft      (deferred)
+6d100000 6d10b000   dispex       (deferred)
+6d8f0000 6d8f9000   ddrawex      (deferred)
+70250000 70255000   c_is2022     (deferred)
+70260000 70299000   c_g18030     (deferred)
+70d00000 70ea0000   gdiplus      (deferred)
+71700000 71848000   shdocvw      (deferred)
+71950000 71a34000   comctl32     (deferred)
+71a50000 71a61000   mpr          (deferred)
+71b40000 71b51000   samlib       (deferred)
+71b60000 71b6d000   ntlanman     (deferred)
+71b70000 71bbf000   netapi32     (deferred)
+71bd0000 71bd6000   netrap       (deferred)
+71be0000 71c1c000   netui1       (deferred)
+71c20000 71c36000   netui0       (deferred)
+71c90000 71cab000   actxprxy     (deferred)
+72220000 72225000   sensapi      (deferred)
+723a0000 723b2000   browselc     (deferred)
+72c60000 72c68000   msacm32      (deferred)
+72c70000 72c79000   wdmaud       (deferred)
+72ef0000 72f4a000   usp10        (deferred)
+72f50000 72f73000   winspool     (deferred)
+73220000 73225000   softpub      (deferred)
+73600000 73607000   msdmo        (deferred)
+736b0000 736f5000   ddraw        (deferred)
+73af0000 73b02000   sti          (deferred)
+73b10000 73b16000   dciman32     (deferred)
+73ca0000 73cb0000   cryptnet     (deferred)
+73cc0000 73cd2000   shgina       (deferred)
+73e20000 73e24000   ksuser       (deferred)
+73e30000 73e3f000   devenum      (deferred)
+73e50000 73ea5000   dsound       (deferred)
+73eb0000 73ff8000   quartz       (deferred)
+74600000 74627000   msls31       (deferred)
+74630000 74659000   msimtf       (deferred)
+74660000 746ab000   msctf        (deferred)
+746b0000 7473f000   mlang        (deferred)
+74a20000 74a27000   cfgmgr32     (deferred)
+74bf0000 74c5f000   mshtmled     (deferred)
+74c70000 74c90000   oledlg       (deferred)
+75090000 750a3000   cabinet      (deferred)
+758b0000 759a1000   msgina       (deferred)
+759b0000 75a53000   userenv      (deferred)
+75ba0000 75c31000   jscript      (deferred)
+75de0000 75e81000   sxs          (deferred)
+75e90000 75ead000   apphelp      (deferred)
+75eb0000 75eb6000   drprov       (deferred)
+75ec0000 75ec9000   davclnt      (deferred)
+75ed0000 75fcc000   browseui     (deferred)
+75fd0000 76031000   msvcp60      (deferred)
+761f0000 761ff000   msasn1       (deferred)
+76210000 7629a000   crypt32      (deferred)
+762b0000 762bf000   winsta       (deferred)
+762e0000 762fa000   imm32        (deferred)
+76300000 76345000   comdlg32     (deferred)
+76350000 7654b000   msi          (deferred)
+76550000 7656b000   cscdll       (deferred)
+76570000 765be000   cscui        (deferred)
+765c0000 7670a000   setupapi     (deferred)
+767d0000 767e4000   hlink        (deferred)
+76ad0000 76ae5000   atl          (deferred)
+76af0000 76b1c000   winmm        (deferred)
+76be0000 76c0b000   wintrust     (deferred)
+76c40000 76c62000   imagehlp     (deferred)
+76ce0000 76ce4000   wmi          (deferred)
+76cf0000 76d06000   mprapi       (deferred)
+76d10000 76d25000   iphlpapi     (deferred)
+76d30000 76d4a000   dhcpcsvc     (deferred)
+76d50000 76d80000   wzcsvc       (deferred)
+76d90000 76db6000   netman       (deferred)
+76dc0000 76de4000   adsldpc      (deferred)
+76df0000 76e1f000   activeds     (deferred)
+76e30000 76e3d000   rtutils      (deferred)
+76e40000 76e51000   rasman       (deferred)
+76e60000 76e8a000   tapi32       (deferred)
+76e90000 76ec7000   rasapi32     (deferred)
+76ed0000 76ef5000   dnsapi       (deferred)
+76f00000 76f08000   wtsapi32     (deferred)
+76f10000 76f3c000   wldap32      (deferred)
+76f40000 76f50000   secur32      (deferred)
+76f60000 76f67000   winrnr       (deferred)
+76f70000 76f75000   rasadhlp     (deferred)
+76f80000 76ff8000   clbcatq      (deferred)
+77000000 770c5000   comres       (deferred)
+770d0000 7715b000   oleaut32     (deferred)
+77160000 7727a000   ole32        (deferred)
+77280000 772e3000   shlwapi      (deferred)
+772f0000 7737b000   comctl32_772f0000     (deferred)
+77380000 77b74000   shell32      (deferred)
+77b80000 77b87000   midimap      (deferred)
+77b90000 77ba4000   msacm32_77b90000     (deferred)
+77bb0000 77bb7000   version      (deferred)
+77bc0000 77c13000   msvcrt       (deferred)
+77c20000 77c60000   gdi32        (deferred)
+77c70000 77ce5000   rpcrt4       (deferred)
+77cf0000 77d7d000   user32       (deferred)
+77d80000 77e18000   advapi32     (deferred)
+77e20000 77f3f000   kernel32     (deferred)
+77f50000 77ff9000   ntdll        (deferred)
+7c000000 7c0ea000   msjava       (deferred)
+7c300000 7c366000   javart       (deferred)
+7c380000 7c3a9000   msawt        (deferred)
+7c400000 7c42c000   jit          (deferred)
+7c480000 7c4af000   javacypt     (deferred)
+7c520000 7c568000   vmhelper     (deferred)
+
+Stack
+  *** Stack trace for last set context - .thread resets it
+ChildEBP RetAddr  Args to Child
+WARNING: Stack unwind information not available. Following frames may be wrong.
+0a90d0c8 00000000 0a90d0ec 09d87618 09d848d8 mmswitch+0x4e86
+
+Register
+Last set context:
+eax=00000000 ebx=09d84840 ecx=03239f08 edx=0a90d0ec esi=00000001 edi=09d87618
+eip=1d1c4e86 esp=0a90d0cc ebp=0a90d0fc iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000             efl=00010206
+mmswitch+4e86:
+1d1c4e86 ??               ???

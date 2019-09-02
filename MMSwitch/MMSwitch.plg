@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MMSwitch - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40c /fo"Debug/MMSwitch.res" /d "_DEBUG" "C:\MMCodecV3.1\DShow\MMSwitch\MMSwitch.rc"" 
+Creating temporary file "C:\DOCUME~1\GUILLA~1.NEU\LOCALS~1\Temp\RSP126.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "_ATL_STATIC_REGISTRY" /FR"Debug/" /Fp"Debug/MMSwitch.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\MMCodecV3.1\DShow\MMSwitch\MMSwitch.cpp"
+"C:\MMCodecV3.1\DShow\MMSwitch\MMSwitchdll.cpp"
+"C:\MMCodecV3.1\DShow\MMSwitch\MMSwitchEvents.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\GUILLA~1.NEU\LOCALS~1\Temp\RSP126.tmp" 
+Creating temporary file "C:\DOCUME~1\GUILLA~1.NEU\LOCALS~1\Temp\RSP127.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "_ATL_STATIC_REGISTRY" /FR"Debug/" /Fp"Debug/MMSwitch.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\MMCodecV3.1\DShow\MMSwitch\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\GUILLA~1.NEU\LOCALS~1\Temp\RSP127.tmp" 
+Creating temporary file "C:\DOCUME~1\GUILLA~1.NEU\LOCALS~1\Temp\RSP128.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/MMSwitch.pdb" /debug /machine:I386 /def:".\MMSwitch.def" /out:"Debug/MMSwitch.dll" /implib:"Debug/MMSwitch.lib" /pdbtype:sept 
+.\Debug\MMSwitch.obj
+.\Debug\MMSwitchdll.obj
+.\Debug\MMSwitchEvents.obj
+.\Debug\StdAfx.obj
+.\Debug\MMSwitch.res
+]
+Creating command line "link.exe @C:\DOCUME~1\GUILLA~1.NEU\LOCALS~1\Temp\RSP128.tmp"
+Creating temporary file "C:\DOCUME~1\GUILLA~1.NEU\LOCALS~1\Temp\RSP129.bat" with contents
+[
+@echo off
+regsvr32 /s /c ".\Debug\MMSwitch.dll"
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\GUILLA~1.NEU\LOCALS~1\Temp\RSP129.bat"
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MMSwitch.cpp
+MMSwitchdll.cpp
+MMSwitchEvents.cpp
+Generating Code...
+Linking...
+   Creating library Debug/MMSwitch.lib and object Debug/MMSwitch.exp
+<h3>Output Window</h3>
+Registering ".\Debug\MMSwitch.dll"
+Creating command line "bscmake.exe /nologo /o"Debug/MMSwitch.bsc"  .\Debug\StdAfx.sbr .\Debug\MMSwitch.sbr .\Debug\MMSwitchdll.sbr .\Debug\MMSwitchEvents.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MMSwitch.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

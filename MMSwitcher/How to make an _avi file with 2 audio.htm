@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0059)http://www.digital-digest.com/dvd/downloads/TwoStreams.HTML -->
+<HTML><HEAD><TITLE>How to make an .avi file with 2 audio</TITLE>
+<STYLE>A:link {
+	TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #bc4343
+}
+P {
+	FONT-SIZE: 12pt; COLOR: #001860; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+LI {
+	LIST-STYLE-POSITION: outside; FONT-SIZE: 12pt; COLOR: #001860; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 13pt; COLOR: #bc4343; FONT-STYLE: italic; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A {
+	COLOR: #0066cc; TEXT-DECORATION: none
+}
+</STYLE>
+
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+href="How to make an _avi file with 2 audio_fichiers/TwoStreams.htm" 
+rel=stylesheet>
+<META content="MSHTML 5.50.4611.1300" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff>
+<P><I><FONT color=#bc4343 size=+1>How to make an .avi file with 2 audio stream 
+and choose one for the playing</FONT></I><BR>(by SPiRiT)</P>
+<P>I think it's an exclusivity because I didn't find any method on the net 
+(24/01/2000). This tecnics work for an <B>.avi</B> file with an mpeg4 video 
+stream and 2 (or more) mp3) <B>mp3</B> audio stream.</P>
+<P>You have extract and compress the video from the vob in mpeg4, so you have 
+for example <B>video.avi</B>. You have extract the 2 languages in <B>.wav</B> 
+for example <B>french.wav</B> and <B>english.wav</B><BR>Launch 
+<B>virtualdub</B>, and multiplex the <B>.avi</B> file with the first 
+<B>.wav</B>, and save under for example <B>videofrench.avi</B>. Next, do the 
+same thing but multiplex with the 2nd <B>.wav</B> and save under 
+<B>videoenglish.avi</B> for example.<BR>So, here we have 2 video file, one for 
+each language.</P>
+<P>Launch graphedit: <BR><B>Insert filters</B>, and choose <B>avi/wav file 
+source</B> and choose <B>videofrench.av</B>i</P>
+<P><A target=_blank 
+href="http://www.digital-digest.com/dvd/downloads/images2/2stream-1.jpg">Image 
+1</A><BR><A target=_blank 
+href="http://www.digital-digest.com/dvd/downloads/images2/2stream-2.jpg">Image 
+2</A><BR><A target=_blank 
+href="http://www.digital-digest.com/dvd/downloads/images2/2stream-3.jpg">Image 
+3</A></P>
+<P><B>insert filters</B>, and choose <B>avi/wav file source</B> and choose 
+<B>videoenglish.avi</B></P>
+<P><B>insert filters</B>, and choose <B>avimux</B></P>
+<P><A target=_blank 
+href="http://www.digital-digest.com/dvd/downloads/images2/2stream-4.jpg">Image 
+4</A></P>
+<P><B>insert filters</B>, and choose <B>file writer</B> (insert the name of the 
+final avi, for example <B>videofinal.avi</B>)</P>
+<P><A target=_blank 
+href="http://www.digital-digest.com/dvd/downloads/images2/2stream-5.jpg">Image 
+5</A><BR><IMAGES2 target="_blank" 2stream-6.jpg?>Image 6</A></P>
+<P>All we have to do is link them:</P>
+<UL>
+  <LI>link the video stream from the first avi to avimux 
+  <LI>link the audio stream from the first avi to avimux 
+  <LI>link the audio stream from the 2nd avi to avimux 
+  <LI>link avimux to file writer </LI></UL>
+<P><A target=_blank 
+href="http://www.digital-digest.com/dvd/downloads/images2/2stream-7.jpg">Image 7 
+</A></P>
+<P>Press play and wait......here we are.....a beautiful <B>.avi</B> with 2 audio 
+stream...<BR>You will say me : why not taking the avi from the begining, take 
+the 2 languages translated in mp3 and multiplex directly with... Well, it 
+doesn't work, (at least with graphedit) si right now it's the only way I've 
+found. If someone know a program who can multiplex directly 2 audio file in one 
+avi.....say it to me :)</P>
+<P>If you launch the <B>.avi</B> file like that, it's screwed because it will 
+read both audio stream...<BR>So, how to do ?<BR>Let's continue:<BR>Hit 
+<B>new</B> in graphedit and in <B>file</B>, choose <B>render url</B> and open 
+the file <B>videofinal.avi</B> (without specifing the directory).</P>
+<P><A target=_blank 
+href="http://www.digital-digest.com/dvd/downloads/images2/2stream-8.jpg">Image 8 
+</A></P>
+<P>(Graphedit must be in <B>videofinal.avi</B>'s directory if not it will note 
+the path for the HD and it will be difficult to put it cd)</P>
+<P><A target=_blank 
+href="http://www.digital-digest.com/dvd/downloads/images2/2stream-9.jpg">Image 9 
+</A></P>
+<P>So, now to read only the first audio stram (here the french one), delete the 
+frame <B>mpeg laye3 decoder</B> from stream 2, go to <B>default directsound 
+device</B> of stream2, right click, and <B>select clock</B>.</P>
+<P><A target=_blank 
+href="http://www.digital-digest.com/dvd/downloads/images2/2stream-10.jpg">Image 
+10</A></P>
+<P>Now save under <B>french.grf </B>for example</P>
+<P><A target=_parent 
+href="http://www.digital-digest.com/dvd/downloads/images2/2stream-11.jpg">Image 
+11</A></P>
+<P>Do the same thing for the second audio stream, here we delete the frame 
+<B>mpeg layer3 decoder</B> from stream 1, and go to <B>default directsound 
+device </B>from stream 1 and <B>select clock</B>.</P>
+<P><A target=_self 
+href="http://www.digital-digest.com/dvd/downloads/images2/2stream-12.jpg">Image 
+12</A></P>
+<P>And save under <B>english.grf </B>for example</P>
+<P><A target=_blank 
+href="http://www.digital-digest.com/dvd/downloads/images2/2stream-13.jpg">Image 
+13</A></P>
+<P>Exit graphedit</P>
+<P>Now to start the video in french do : <B>mplayer2.exe french.grf<BR></B>and 
+in english : <B>mplayer2.exe english.grf</B></P>
+<P>See you soon and don't hesitate to <A 
+href="mailto:bvr@ibelgique.com">write</A> to me. </P>
+<P><B><FONT size=+1>SPiRiT</FONT></B></P></BODY></HTML>

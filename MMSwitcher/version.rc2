@@ -1,0 +1,45 @@
+#include "..\..\common\VersionInfo.h"
+#include "ProdInfo.h"
+#include "VersionNo.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION FILEVER
+ PRODUCTVERSION PRODUCTVER
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", COMMENTS
+            VALUE "CompanyName", COMPANYNAME
+            VALUE "FileDescription", DESCRIPTION
+            VALUE "FileVersion", STRFILEVER
+            VALUE "InternalName", FILENAME
+            VALUE "LegalCopyright", LEGALCOPYRIGHT
+            VALUE "LegalTrademarks", LEGALTRADEMARK
+            VALUE "OriginalFilename", FILENAME
+            VALUE "PrivateBuild", PRIVATEBUILD
+            VALUE "ProductName", DESCRIPTION
+            VALUE "ProductVersion", STRPRODUCTVER
+            VALUE "SpecialBuild", STRPRODUCTVER
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

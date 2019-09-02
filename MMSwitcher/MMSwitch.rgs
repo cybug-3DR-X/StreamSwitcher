@@ -1,0 +1,34 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {E822508C-390A-4b0b-A2D4-8FF50AA7DD18} = s 'MMSwitch Class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+		}
+	}
+}
+HKEY_LOCAL_MACHINE
+{
+    NoRemove SOFTWARE
+    {
+        NoRemove Microsoft
+        {
+            NoRemove MediaPlayer
+            {
+                NoRemove UIPlugins
+                {
+                    ForceRemove {E822508C-390A-4b0b-A2D4-8FF50AA7DD18}
+                    {
+                        val FriendlyName = s 'res://MMSwitch.dll/RT_STRING/#102'
+                        val Description = s 'res://MMSwitch.dll/RT_STRING/#103'
+                        val Capabilities = d '3221225473'
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+This filter allows you to use multiple-language AVIs in Windows Media Player 8 and 9 and to switch the audio stream on the fly.
+
+Go in the 'Language' menu of Windows Media Player to select the active audio stream.
+
+Please send comments to webmaster@morgan-multimedia.com
+
+                                    http://www.morgan-multimedia.com
+
+-----------------------------------------------------------------------------------------------------------------------------
+You can customize text description of streams displayed in Windows Media Player.
+
+1 - Create an empty text file in the same directory as your AVI file. (MyAviFile.avi)
+2 - Edit the text file following this sample :
+
+[MSS]
+Audio_1=English (VO)
+Audio_2=Français
+Audio_def= 2
+
+3 - Save the file.
+4 - Rename the file as it has the same name as your AVI file with .mss extension. (MyAviFile.mss)
